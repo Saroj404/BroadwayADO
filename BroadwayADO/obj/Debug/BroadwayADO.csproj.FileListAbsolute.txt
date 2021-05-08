@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\BroadwayADO\BroadwayADO\bin\Debug\BroadwayADO.exe.config
+C:\Users\user\source\repos\BroadwayADO\BroadwayADO\bin\Debug\BroadwayADO.exe
+C:\Users\user\source\repos\BroadwayADO\BroadwayADO\bin\Debug\BroadwayADO.pdb
+C:\Users\user\source\repos\BroadwayADO\BroadwayADO\obj\Debug\BroadwayADO.csprojAssemblyReference.cache
+C:\Users\user\source\repos\BroadwayADO\BroadwayADO\obj\Debug\BroadwayADO.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\BroadwayADO\BroadwayADO\obj\Debug\BroadwayADO.exe
+C:\Users\user\source\repos\BroadwayADO\BroadwayADO\obj\Debug\BroadwayADO.pdb

@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\bin\Debug\Broadway.DesktopApp.exe.config
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\bin\Debug\Broadway.DesktopApp.exe
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\bin\Debug\Broadway.DesktopApp.pdb
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\obj\Debug\Broadway.DesktopApp.csprojAssemblyReference.cache
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\obj\Debug\Broadway.DesktopApp.Form1.resources
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\obj\Debug\Broadway.DesktopApp.Properties.Resources.resources
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\obj\Debug\Broadway.DesktopApp.csproj.GenerateResource.cache
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\obj\Debug\Broadway.DesktopApp.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\obj\Debug\Broadway.DesktopApp.exe
+C:\Users\user\source\repos\BroadwayADO\Broadway.DesktopApp\obj\Debug\Broadway.DesktopApp.pdb

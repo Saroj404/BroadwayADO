@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BroadwayADO", "BroadwayADO\BroadwayADO.csproj", "{DDB06994-A758-4A59-8D51-6E32D5F55716}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Broadway.DesktopApp", "Broadway.DesktopApp\Broadway.DesktopApp.csproj", "{4E79E6D2-9063-44D7-9D30-94C04BF1D11A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DDB06994-A758-4A59-8D51-6E32D5F55716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDB06994-A758-4A59-8D51-6E32D5F55716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDB06994-A758-4A59-8D51-6E32D5F55716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E79E6D2-9063-44D7-9D30-94C04BF1D11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E79E6D2-9063-44D7-9D30-94C04BF1D11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E79E6D2-9063-44D7-9D30-94C04BF1D11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E79E6D2-9063-44D7-9D30-94C04BF1D11A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

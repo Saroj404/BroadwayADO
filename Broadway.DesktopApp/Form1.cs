@@ -66,6 +66,7 @@ namespace Broadway.DesktopApp
             try
             {
                 var res = command.ExecuteNonQuery();
+                
             }
             catch (Exception ex)
             {
@@ -77,16 +78,16 @@ namespace Broadway.DesktopApp
         }
         private void UpdateTable(SqlConnection connection)
         {
-            Console.WriteLine("Enter the id of the record to update");
-            var id = Console.ReadLine();
-            Console.WriteLine("Enter name:");
-            var Name = Console.ReadLine();
-            Console.WriteLine("Enter phone number:");
-            var Phone = Console.ReadLine();
-            Console.WriteLine("Enter rent:");
-            var Rent = Console.ReadLine();
 
-            string queryString = $"update Tentent set Name=('{Name}'),Phone=('{Phone}'),Rent=('{Rent}') where id=('{id}') ";
+
+
+            var Name = textBox1.Text;
+
+            var Phone = textBox2.Text;
+
+            var Rent = textBox3.Text;
+
+            string queryString = $"update Tentent set Name=('{Name}'),Phone=('{Phone}'),Rent=('{Rent}') where id=('{selectedid}') ";
             SqlCommand command = new SqlCommand(queryString, connection);
 
             try
@@ -99,27 +100,31 @@ namespace Broadway.DesktopApp
             }
 
 
-            Console.ReadLine();
+           // Console.ReadLine();
 
 
 
         }
         private void DeleteFromTable(SqlConnection connection)
         {
-            Console.WriteLine("Enter the id of the record to be deleted");
-            var id = Console.ReadLine();
-            string queryString = $"delete from Tentent where id=('{id}')";
+           if(selectedid==0)
+            {
+                MessageBox.Show("Id is 0, unable to find the record");
+                return;
+            }
+            string queryString = $"delete from Tentent where id=('{selectedid}')";
             SqlCommand command = new SqlCommand(queryString, connection);
 
             try
             {
                 var res = command.ExecuteNonQuery();
+                Reloaddata();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            Console.ReadLine();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -132,13 +137,7 @@ namespace Broadway.DesktopApp
             {
                 connection.Open();
                 ReadFromTable(connection);
-
-
-
-
                 connection.Close();
-                
-
             }
         }
 
@@ -148,13 +147,8 @@ namespace Broadway.DesktopApp
             {
                 connection.Open();
                 InsertIntoTable(connection);
-
-
-
-
                 connection.Close();
                 Reloaddata();
-
             }
 
         }
@@ -174,6 +168,42 @@ namespace Broadway.DesktopApp
                 sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
             }
             MessageBox.Show($"Your Total Rent is: Rs.{sum.ToString()}");
+        }
+        int selectedid = 0;
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                DeleteFromTable(connection);
+                connection.Close();
+                Reloaddata();
+
+            }
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            var selected = dataGridView1.SelectedRows;
+            selectedid = (int)selected[0].Cells[0].Value;
+            textBox1.Text = (string)selected[0].Cells[1].Value;
+            textBox2.Text = dataGridView1.CurrentRow.Cells["Phone"].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells["Rent"].Value.ToString();
+            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                UpdateTable(connection);
+                connection.Close();
+                Reloaddata();
+
+            }
+
         }
     }
     public class Tentent
